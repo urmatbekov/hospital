@@ -1,0 +1,16 @@
+
+.my-link {
+    color: white;
+}
+
+.home {
+    color: #00adef;
+}
+
+.my-link:hover {
+    color: #00adef;
+}
+
+ul {
+    list-style: none;
+}
