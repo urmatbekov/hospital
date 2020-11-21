@@ -26,7 +26,6 @@ class Best extends Component {
                         </svg>
 
                         <a className="ml-2" href="#">FASTER FIRST AID </a>
-
                         <p>
                             What might be right for you may not be right for <br/>
                             some so lets make the most of this day since we <br/>
@@ -87,6 +86,7 @@ class Best extends Component {
                                   d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.396 3.001V11H6.209V8.43H3.687V11H2.5V5.001h1.187v2.44h2.522V5h1.187zM8.5 11V5.001h2.188c1.824 0 2.685 1.09 2.685 2.984C13.373 9.893 12.5 11 10.69 11H8.5z"/>
                         </svg>
 
+
                         <a className="ml-2" href="#">INTENSIVE CARE
                         </a>
                         <p>
@@ -99,10 +99,10 @@ class Best extends Component {
                 </div>
                 <div className="ld">
                     <div className="list">
-
-                        <div className="container bg-danger  text-white">
+                        <div className="container   text-white">
                             OUR WORKING TIME
                         </div>
+                        <br/>
                         <ul>
                             <li>
                                 Mon - Fri08:00am - 10:00pm
@@ -120,6 +120,20 @@ class Best extends Component {
                                 Visitors11:00am - 01:00pm
                             </li>
                         </ul>
+                        <br/>
+                        <div className="container  text-white">
+                            DISCHARGE TIME
+                        </div>
+                        <br/>
+                        <ul>
+                            <li>
+                                Mon - Fri01:00pm - 02:00pm
+                            </li>
+                            <li>
+                                Saturday11:00am - 01:00pm
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 

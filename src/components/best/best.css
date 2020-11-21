@@ -23,7 +23,7 @@ svg {
     min-height: 556px;
     margin: 30px 0 -120px;
     background: #344659 url(https://www.desktopbackground.org/download/1680x1050/2012/05/05/385388_microsoft-windows-7-ball-wallpapers-and-images-wallpapers_1920x1200_h.jpg) no-repeat 50% 100%;
-    background-size: 1000px 600px;
+    background-size: 7000px 600px;
     background-position: center;
 }
 .ld{
@@ -35,4 +35,14 @@ svg {
 }
 li{
     color: aliceblue;
+    list-style: none;
+    margin-left: 31px;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 40px;
+}
+.text-white{
+    background-color: #00ADEF;
+    font-size: 25px;
 }
