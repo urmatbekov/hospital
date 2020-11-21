@@ -25,6 +25,9 @@ class Carousels extends Component {
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
+                    <div className="test">
+
+                    </div>
                     <img
                         className="d-block w-100"
                         src="/image/slider/img-01.jpg"

@@ -11,6 +11,16 @@
     z-index: 2;
 }
 
+.test:before {
+    content: "";
+    background-color: #00adef;
+    width: 60%;
+    height: 100%;
+    transform: skewX(-65deg);
+    position: absolute;
+    display: block;
+
+}
 .my-navbar {
     position: relative;
     height: 30px;
@@ -33,7 +43,6 @@
 
 .my-link:hover, ul {
     color: #00adef;
-    transform: translateY(-5px);
 }
 
 .my-navbar ul li a {
@@ -43,13 +52,8 @@
     color: white;
 }
 
-
 .my-navbar ul li a:hover {
     color: #00adef;
-}
-
-ul:hover {
-    transform: translateY(-10px);
 }
 
 .my-navbar .nav-item {
@@ -76,4 +80,7 @@ ul:hover {
 
 .my-navbar .nav-item:hover .nav-link{
     color: #00adef !important;
+}
+.nav-item .nav-link .home {
+    color: #00adef;
 }
