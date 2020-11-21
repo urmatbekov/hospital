@@ -6,52 +6,88 @@ class Header extends Component {
     render() {
         return (
             <Navbar bg="dark" expand="lg">
-                <div className='container my-navbar'>
+                <div className='container d-inline '>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto my-navbar">
+                        <Nav className="my-navbar">
                             <Nav.Link href="#link">
-                                <span className="home">HOME</span>
-                                <ul className='my-ul'>
-                                    <li>HOME ON</li>
-                                    <li>HOME TWO</li>
-                                    <li>HOME THREE</li>
+                                <span className="home th-list">HOME</span>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href="">HOME ON</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HOME TWO</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>HOME THREE</a>
+                                    </li>
                                 </ul>
                             </Nav.Link>
                             <Nav.Link href="#link"><span className='my-link'>ABOUT US</span></Nav.Link>
                             <Nav.Link href="#link">
-                                <span className='my-link'>TREATMENTS</span>
-                                <ul className='my-ul'>
-                                    <li>TREATMENT V1</li>
-                                    <li>TREATMENT V2</li>
-                                    <li>TREATMENT FULLWIDTH</li>
-                                    <li>TREATMENT MASONRY</li>
-                                    <li>TREATMENT DETAIL</li>
+                                <span className='my-link th-list '>TREATMENTS</span>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href=''>TREATMENT V1</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>TREATMENT V2</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>TREATMENT FULLWIDTH</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>TREATMENT MASONRY</a>
+                                    </li>
+                                    <li>
+                                        <a href="">TREATMENT DETAIL</a>
+                                    </li>
                                 </ul>
                             </Nav.Link>
                             <Nav.Link href="#link">
-                                <span className='my-link'>BLOG</span>
-                                <ul className='my-ul'>
-                                    <li>BLOG V1</li>
-                                    <li>BLOG V2</li>
-                                    <li>BLOG DETAIL</li>
+                                <span className='my-link th-list'>BLOG</span>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href=''>BLOG V1</a>
+                                    </li>
+                                    <li>
+                                        <a href="">BLOG V2</a>
+                                    </li>
+                                    <li>
+                                        <a href="">BLOG DETAIL</a>
+                                    </li>
                                 </ul>
                             </Nav.Link>
                             <Nav.Link href="#link">
-                                <span className='my-link'>CONTACT</span>
-                                <ul className='my-ul'>
-                                    <li>CONTACTUS</li>
-                                    <li>CONTACTUS2</li>
+                                <span className='my-link th-list'>CONTACT</span>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href="">CONTACTUS</a>
+                                    </li>
+                                    <li>
+                                        <a href="">CONTACTUS2</a>
+                                    </li>
                                 </ul>
                             </Nav.Link>
                             <Nav.Link href="#link">
-                                <span className='my-link'>PAGES</span>
-                                <ul className='my-ul'>
-                                    <li>SERVICES</li>
-                                    <li>DEPARTMENTS</li>
-                                    <li>APPOINTMENT</li>
-                                    <li>404 PAGE</li>
-                                    <li>COMING SOON</li>
+                                <span className='my-link th-list'>PAGES</span>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href="">SERVICES</a>
+                                    </li>
+                                    <li>
+                                        <a href="">DEPARTMENTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="">APPOINTMENT</a>
+                                    </li>
+                                    <li>
+                                        <a href="">404 PAGE</a>
+                                    </li>
+                                    <li>
+                                        <a href="">COMING SOON</a>
+                                    </li>
                                 </ul>
                             </Nav.Link>
                         </Nav>

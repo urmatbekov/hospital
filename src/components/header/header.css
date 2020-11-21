@@ -1,60 +1,43 @@
+.my-ul {
+    list-style: none;
+    top: 70px;
+    left: 0;
+    background: #2d3e50;
+    width: 220px;
+    padding: 15px 0;
+    margin: 0;
+    position: absolute;
+}
 
-.my-link {
-    color: white;
+.my-navbar {
+    position: relative;
+    height: 50px;
 }
 
 .home {
-    color: #00adef;
+    color: #00adef;;
+}
+
+.my-link {
+    color: white;
 }
 
 .my-link:hover {
     color: #00adef;
 }
 
-.my-navbar {
-    position: relative;
-}
-
-.my-ul {
-    top: 170%;
-    left: 0;
-    margin: 0;
-    z-index: 5;
-    width: 220px;
-    color: #fff;
-    padding: 15px 0;
-    font-size: 14px;
-    background: #2d3e50;
-    position: absolute;
-}
-
-ul li {
-    line-height: inherit;
-    list-style-type: none;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-.my-navbar ul li {
-    float: none;
-    vertical-align: top;
-    padding: 13px 15px;
-}
-
-ul li:hover {
-    color: #00adef;
-}
-.my-navbar ul li{
+.my-navbar ul li a {
     padding: 10px;
     display: block;
     line-height: inherit;
+    text-decoration: none;
+    color: white;
 }
-.home:hover ul {
+
+.my-navbar ul li a:hover {
+    color: #00adef;
+}
+
+.my-navbar ul:hover {
     transform: translateY(-5px);
-}
-li {
-    transform: none;
 }
