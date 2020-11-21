@@ -12,6 +12,9 @@ class Carousels extends Component {
                         src="/image/slider/img-01.jpg"
                         alt="First slide"
                     />
+                    <div>
+                        dwadwad
+                    </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
