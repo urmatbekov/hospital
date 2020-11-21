@@ -1,0 +1,79 @@
+
+.my-ul {
+    list-style: none;
+    top: 60px;
+    left: 0;
+    background: #2d3e50;
+    width: 220px;
+    padding: 20px 0;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.my-navbar {
+    position: relative;
+    height: 30px;
+    font-size: 14px;
+
+}
+
+.navbar-dark .navbar-nav a.nav-link {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.home {
+    color: #00adef;;
+}
+
+.my-link {
+    color: white;
+}
+
+.my-link:hover, ul {
+    color: #00adef;
+    transform: translateY(-5px);
+}
+
+.my-navbar ul li a {
+    display: block;
+    line-height: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+
+.my-navbar ul li a:hover {
+    color: #00adef;
+}
+
+ul:hover {
+    transform: translateY(-10px);
+}
+
+.my-navbar .nav-item {
+    position: relative;
+}
+
+.nav-item .my-ul {
+    position: absolute;
+    overflow: auto;
+    width: fit-content;
+    top: 250%;
+    min-width: 220px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.my-navbar .nav-item:hover .my-ul{
+    visibility: visible;
+    opacity: 1;
+    top: 180%;
+}
+
+
+.my-navbar .nav-item:hover .nav-link{
+    color: #00adef !important;
+}
