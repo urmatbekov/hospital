@@ -1,26 +1,126 @@
 import React, {Component} from 'react';
-import {Navbar, Nav, Form, FormControl, Button} from "react-bootstrap";
+import {Navbar, Nav} from "react-bootstrap";
 import "./header.css";
 
 class Header extends Component {
     render() {
         return (
-            <Navbar bg="dark" expand="lg">
-                <div className='container my-navbar'>
+            // <Navbar bg="light" expand="lg">
+            //     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            //     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            //     <Navbar.Collapse id="basic-navbar-nav">
+            //         <Nav className="mr-auto">
+            //             <Nav.Item>
+            //                 <Nav.Link href="#home">Home</Nav.Link>
+            //             </Nav.Item>
+            //             <Nav.Item>
+            //                 <Nav.Link href="#link">Link</Nav.Link>
+            //             </Nav.Item>
+            //         </Nav>
+            //         <Form inline>
+            //             <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
+            //             <Button variant="outline-success">Search</Button>
+            //         </Form>
+            //     </Navbar.Collapse>
+            // </Navbar>
+            <Navbar bg="dark" variant="dark" expand="lg">
+                <div className='container'>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto ">
-                            <Nav.Link href="#link"><span className="home">HOME</span></Nav.Link>
-                            <Nav.Link href="#link"><span className='my-link'>ABOUT US</span></Nav.Link>
-                            <Nav.Link href="#link"><span className='my-link'>TREATMENTS</span></Nav.Link>
-                            <Nav.Link href="#link"><span className='my-link'>BLOG</span></Nav.Link>
-                            <Nav.Link href="#link"><span className='my-link'>CONTACT</span></Nav.Link>
-                            <Nav.Link href="#link"><span className='my-link'>PAGES</span></Nav.Link>
+                        <Nav className="my-navbar">
+                            <Nav.Item>
+                                <Nav.Link href="#link">
+                                    HOME
+                                </Nav.Link>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href="">HOME ON</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HOME TWO</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>HOME THREE</a>
+                                    </li>
+                                </ul>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="#link">ABOUT US</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link className='nav-link' href="#link">
+                                    TREATMENTS
+                                </Nav.Link>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href=''>TREATMENT V1</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>TREATMENT V2</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>TREATMENT FULLWIDTH</a>
+                                    </li>
+                                    <li>
+                                        <a href=''>TREATMENT MASONRY</a>
+                                    </li>
+                                    <li>
+                                        <a href="">TREATMENT DETAIL</a>
+                                    </li>
+                                </ul>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="#link">
+                                    BLOG
+                                </Nav.Link>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href=''>BLOG V1</a>
+                                    </li>
+                                    <li>
+                                        <a href="">BLOG V2</a>
+                                    </li>
+                                    <li>
+                                        <a href="">BLOG DETAIL</a>
+                                    </li>
+                                </ul>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="#link">
+                                    CONTACT
+                                </Nav.Link>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href="">CONTACTUS</a>
+                                    </li>
+                                    <li>
+                                        <a href="">CONTACTUS2</a>
+                                    </li>
+                                </ul>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="#link">
+                                    PAGES
+                                </Nav.Link>
+                                <ul className='my-ul col'>
+                                    <li>
+                                        <a href="">SERVICES</a>
+                                    </li>
+                                    <li>
+                                        <a href="">DEPARTMENTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="">APPOINTMENT</a>
+                                    </li>
+                                    <li>
+                                        <a href="">404 PAGE</a>
+                                    </li>
+                                    <li>
+                                        <a href="">COMING SOON</a>
+                                    </li>
+                                </ul>
+                            </Nav.Item>
                         </Nav>
-                        <Form inline>
-                            <FormControl type="text" placeholder="Search Your Queries" className="mr-sm-2"/>
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
                     </Navbar.Collapse>
                 </div>
             </Navbar>

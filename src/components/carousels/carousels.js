@@ -1,36 +1,58 @@
 import React, {Component} from 'react';
-import Carousel from "react-bootstrap/Carousel";
+import "../header/header.css"
+import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/swiper-bundle.css';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+
+// install Swiper components
+SwiperCore.use([Navigation, Pagination, A11y]);
 
 class Carousels extends Component {
     render() {
         return (
-            <Carousel>
-                <Carousel.Item>
+            <Swiper
+                loop
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation
+                pagination={{clickable: true}}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                <SwiperSlide>
                     <img
                         className="d-block w-100"
                         src="/image/slider/img-01.jpg"
                         alt="First slide"
                     />
-                    <div>
-                        dwadwad
-                    </div>
-                </Carousel.Item>
-                <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                     <img
                         className="d-block w-100"
                         src="/image/slider/img-01.jpg"
-                        alt="Third slide"
+                        alt="First slide"
                     />
-                </Carousel.Item>
-                <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                     <img
                         className="d-block w-100"
                         src="/image/slider/img-01.jpg"
-                        alt="Third slide"
+                        alt="First slide"
                     />
-                </Carousel.Item>
-            </Carousel>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img
+                        className="d-block w-100"
+                        src="/image/slider/img-01.jpg"
+                        alt="First slide"
+                    />
+                </SwiperSlide>
+            </Swiper>
         );
     }
 }
