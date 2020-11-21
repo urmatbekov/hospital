@@ -8,7 +8,7 @@ class App extends Component {
         return (
             <div>
                 <Header/>
-                {/*<Carousel/>*/}
+                <Carousel/>
             </div>
         );
     }
