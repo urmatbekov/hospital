@@ -88,3 +88,11 @@
     text-transform: uppercase;
     font: bold 15px/40px 'Open Sans', Arial, Helvetica, sans-serif;
 }
+
+.swiper-slide .th-btn {
+    text-decoration: none;
+}
+.swiper-slide .test .th-text .th-btns .th-btn:hover {
+    background: #2d3e50;
+    border: 2px  solid #2d3e50;
+}
