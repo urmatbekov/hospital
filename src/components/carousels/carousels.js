@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import "../header/header.css"
-import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
+import "./swiper.css"
+import SwiperCore, {Navigation, Pagination, A11y} from 'swiper';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.css';
@@ -26,34 +26,78 @@ class Carousels extends Component {
             >
                 <SwiperSlide>
                     <div className="test">
-
+                        <div className='container th-text'>
+                            <h1>
+                                Our Dedication is what
+                                <span>You can Trust</span>
+                            </h1>
+                            <div className="text">
+                                <p>
+                                    The mate was a mighty sailing man the skipper brave and sure five passengers set
+                                    sail that day for a three hour tour a three hour tour being thank you
+                                </p>
+                            </div>
+                            <div className="th-btns">
+                                <a className="th-btn" href="">Purchase</a>
+                                <a className="th-btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <img
+                            className="d-block w-100"
+                            src="/image/slider/img-01.jpg"
+                            alt="First slide"
+                        />
                     </div>
-                    <img
-                        className="d-block w-100"
-                        src="/image/slider/img-01.jpg"
-                        alt="First slide"
-                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
-                        className="d-block w-100"
-                        src="/image/slider/img-01.jpg"
-                        alt="First slide"
-                    />
+                    <div className="test">
+                        <div className='container th-text'>
+                            <h1>
+                                Our Dedication is what
+                                <span>You can Trust</span>
+                            </h1>
+                            <div className="text">
+                                <p>
+                                    The mate was a mighty sailing man the skipper brave and sure five passengers set
+                                    sail that day for a three hour tour a three hour tour being thank you
+                                </p>
+                            </div>
+                            <div className="th-btns">
+                                <a className="th-btn" href="">Purchase</a>
+                                <a className="th-btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <img
+                            className="d-block w-100"
+                            src="/image/slider/img-01.jpg"
+                            alt="First slide"
+                        />
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
-                        className="d-block w-100"
-                        src="/image/slider/img-01.jpg"
-                        alt="First slide"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        className="d-block w-100"
-                        src="/image/slider/img-01.jpg"
-                        alt="First slide"
-                    />
+                    <div className="test">
+                        <div className='container th-text'>
+                            <h1>
+                                Our Dedication is what
+                                <span>You can Trust</span>
+                            </h1>
+                            <div className="text">
+                                <p>
+                                    The mate was a mighty sailing man the skipper brave and sure five passengers set
+                                    sail that day for a three hour tour a three hour tour being thank you
+                                </p>
+                            </div>
+                            <div className="th-btns">
+                                <a className="th-btn" href="">Purchase</a>
+                                <a className="th-btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <img
+                            className="d-block w-100"
+                            src="/image/slider/img-01.jpg"
+                            alt="First slide"
+                        />
+                    </div>
                 </SwiperSlide>
             </Swiper>
         );

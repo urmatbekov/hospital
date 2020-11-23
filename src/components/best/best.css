@@ -1,48 +1,56 @@
-.font{
+.font {
     font-family: 'Rajdhani', sans-serif;
     font-size: 19px;
     color: #00ADEF;
 }
-.p{
+
+.p {
     text-align: center;
-    word-break:break-all;
+    word-break: break-all;
 }
-.ml-2{
+
+.ml-2 {
     color: black;
 }
-.span{
+
+.span {
     color: #00ADEF;
 }
+
 svg {
     color: #00ADEF;
 }
+
 .list {
     width: 100%;
     float: left;
     padding: 46px 0;
     min-height: 556px;
     margin: 30px 0 -120px;
-    background: #344659 url(https://www.desktopbackground.org/download/1680x1050/2012/05/05/385388_microsoft-windows-7-ball-wallpapers-and-images-wallpapers_1920x1200_h.jpg) no-repeat 50% 100%;
     background-size: 7000px 600px;
-    background-position: center;
+    background: #344659 url(https://www.desktopbackground.org/download/1680x1050/2012/05/05/385388_microsoft-windows-7-ball-wallpapers-and-images-wallpapers_1920x1200_h.jpg) no-repeat center;
 }
-.ld{
+
+.ld {
     width: 400px;
     float: right;
     margin-right: 252px;
     position: relative;
     top: -321px;
 }
-li{
+
+li {
     color: aliceblue;
     list-style: none;
     margin-left: 31px;
     margin-bottom: 15px;
 }
-h2{
+
+h2 {
     font-size: 40px;
 }
-.text-white{
+
+.text-white {
     background-color: #00ADEF;
     font-size: 25px;
 }

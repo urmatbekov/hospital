@@ -1,0 +1,90 @@
+/*h1 {*/
+/*    display: block;*/
+/*    font-size: 2em;*/
+/*    margin-block-start: 0.67em;*/
+/*    margin-block-end: 0.67em;*/
+/*    margin-inline-start: 0;*/
+/*    margin-inline-end: 0;*/
+/*    font-weight: bold;*/
+/*}*/
+.swiper-slide {
+    overflow: hidden;
+}
+
+.swiper-slide .test:before {
+    content: "";
+    width: 70%;
+    background-color: #00adef;
+    height: 100%;
+    z-index: 1;
+    transform: skewX(-15deg);
+    position: absolute;
+    display: block;
+    left: -8%;
+    opacity: 0.7;
+}
+.swiper-slide .test .th-text {
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+    left: 14%;
+}
+
+.swiper-slide .test .th-text h1 {
+    font-size: 50px;
+    line-height: 30px;
+    margin: 0 0 15px;
+    color: white;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.swiper-slide .test .th-text h1 span {
+    font-size: 50px;
+    line-height: 33px;
+    padding: 15px 0 0;
+    color: #2d3e50;
+    display: block;
+    font-weight: bold;
+}
+
+.swiper-slide .test .th-text .text {
+    width: 820px;
+    float: left;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.swiper-slide .test  .th-text .text p {
+    padding: 0 0 30px;
+    width: 80%;
+    float: left;
+    margin: 0;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+
+.swiper-slide .test  .th-text .th-btns {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.swiper-slide .test  .th-text .th-btns .th-btn {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.swiper-slide .test .th-text .th-btns .th-btn {
+    color: #fff;
+    padding: 0 50px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font: bold 15px/40px 'Open Sans', Arial, Helvetica, sans-serif;
+}

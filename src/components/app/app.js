@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Best from "../best/best";
 
 import Header from "../header/header";
-import Carousel from "../carousels/carousels";
+import Swiper from "../carousels/carousels";
 
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
         return (
             <div>
                 <Header/>
-                <Carousel/>
+                <Swiper/>
                 <Best/>
             </div>
         );
