@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './best.css'
+import { Parallax } from 'react-parallax';
+
 
 class Best extends Component {
     render() {
@@ -139,8 +141,13 @@ class Best extends Component {
 
                         </div>
                     </div>
-
                 </div>
+
+                    <Parallax className="parallax"  bgImage="/image/slider/car.jpg" bgImageAlt="the cat" strength={800}>
+                        Content goes here. Parallax height grows with content height.
+                    </Parallax>
+
+
             </div>
         );
     }
