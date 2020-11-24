@@ -3,3 +3,16 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #373542;
+  margin: 0 0 8px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}

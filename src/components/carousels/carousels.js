@@ -26,20 +26,22 @@ class Carousels extends Component {
             >
                 <SwiperSlide>
                     <div className="test">
-                        <div className='container th-text'>
-                            <h1>
-                                Our Dedication is what
-                                <span>You can Trust</span>
-                            </h1>
-                            <div className="text">
-                                <p>
-                                    The mate was a mighty sailing man the skipper brave and sure five passengers set
-                                    sail that day for a three hour tour a three hour tour being thank you
-                                </p>
-                            </div>
-                            <div className="th-btns">
-                                <a className="th-btn" href="">Purchase</a>
-                                <a className="th-btn" href="">Learn More</a>
+                        <div className=''>
+                            <div className="th-text container">
+                                <h1>
+                                    Our Dedication is what
+                                    <span>You can Trust</span>
+                                </h1>
+                                <div className="text">
+                                    <p>
+                                        The mate was a mighty sailing man the skipper brave and sure five passengers set
+                                        sail that day for a three hour tour a three hour tour being thank you
+                                    </p>
+                                </div>
+                                <div className="th-btns">
+                                    <a className="th-btn" href="">Purchase</a>
+                                    <a className="th-btn" href="">Learn More</a>
+                                </div>
                             </div>
                         </div>
                         <img
