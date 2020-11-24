@@ -33,7 +33,6 @@
 
 .my-link:hover, ul {
     color: #00adef;
-    transform: translateY(-5px);
 }
 
 .my-navbar ul li a {
@@ -48,9 +47,7 @@
     color: #00adef;
 }
 
-ul:hover {
-    transform: translateY(-10px);
-}
+
 
 .my-navbar .nav-item {
     position: relative;
