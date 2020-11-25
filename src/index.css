@@ -16,3 +16,6 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   text-transform: uppercase;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+a {
+  text-decoration: none;
+}

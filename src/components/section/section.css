@@ -15,7 +15,7 @@
     width: 100%;
     float: left;
     padding: 0 0 30px;
-    background: url(/public/image/pattern/pattern-02.png) no-repeat 50% 100%;
+    background-image: url(/public/image/pattern/pattern-02.png);
 }
 
 .th-sectionSpace h2 {

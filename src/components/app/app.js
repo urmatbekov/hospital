@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Best from "../best/best";
 import Header from "../header/header";
-import Swiper from "../carousels/carousels";
 import ParallaxSection from "../parallax/parallax";
 import Section from "../section/section";
+import Carousels from "../carousels/carousels";
 
 
 
@@ -13,7 +13,7 @@ class App extends Component {
         return (
             <div>
                 <Header/>
-                <Swiper/>
+                <Carousels/>
                 <Best/>
                 <ParallaxSection/>
                 <Section/>
