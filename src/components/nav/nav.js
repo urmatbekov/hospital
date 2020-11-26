@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './nav.css'
 
+
 class Nav extends Component {
     render() {
         return (
@@ -33,6 +34,7 @@ class Nav extends Component {
                             </svg>
 
                         </button>
+
                     </div>
 
                 </div>

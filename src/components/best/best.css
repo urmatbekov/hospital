@@ -33,10 +33,9 @@ svg {
 .ld{
     width: 400px;
     float: right;
-    position: absolute;
-    top: -2%;
-    right: 12%;
+    margin-bottom: 14%;
 }
+
 .io{
     color: aliceblue;
     list-style: none;
@@ -50,7 +49,42 @@ h2{
     background-color: #00ADEF;
     font-size: 25px;
 }
+.bg-blue{
+    background-color: #00adef;
+    width: 100%;
+    height: 275px;
+    position: relative;
+
+}.a, .b, .f, .s {
+     border:1px solid white;
+     width: 200px;
+     height: 150px;
+     position: absolute;
+    top: 18%;
+    color: aliceblue;
+    font-size: 27px;
+    text-align: center;
+ }
+ .a{
+     left: 20%;
+ }
+ .b{
+     left: 35%;
+ }
+ .s{
+     left: 50%;
+ }
+ .f{
+     left: 65%;
+ }
+.bg-blue .h1{
+    color: #2d3e50;
+}
 .parallax{
     width: 100%;
     height: 100vh;
 }
+.hr{
+    margin-bottom: 50%;
+}
+

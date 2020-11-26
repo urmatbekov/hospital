@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './best.css'
-import { Parallax } from 'react-parallax';
+import {Parallax} from 'react-parallax';
+import CountUp from "react-countup";
 
 
 class Best extends Component {
@@ -8,6 +9,9 @@ class Best extends Component {
         return (
             <div className="mt-4">
 
+                <h1 className="text-center font-weight-bold">
+                    <CountUp end={100000000000000}/>+
+                </h1>
                 <h2 className="container">We Give You <span className="span">The Best</span></h2>
                 <p className="p">
                     Just two good old boys never meaning no harm beats all
@@ -57,6 +61,7 @@ class Best extends Component {
                             </p>
 
                         </div>
+
                     </div>
                     <div className="row ">
 
@@ -101,52 +106,89 @@ class Best extends Component {
                             </p>
 
                         </div>
-                    </div>
-                    <div className="ld">
-                        <div className="list">
-                            <div className="container   text-white">
-                                OUR WORKING TIME
-                            </div>
-                            <br/>
-                            <ul className="io">
-                                <li>
-                                    Mon - Fri08:00am - 10:00pm
-                                </li>
-                                <li>
-                                    Syaturda10:00am - 07:00pm
-                                </li>
-                                <li>
-                                    SundayEmergency Only
-                                </li>
-                                <li>
-                                    Ambulance24/7 Service
-                                </li>
-                                <li>
-                                    Visitors11:00am - 01:00pm
-                                </li>
-                            </ul>
-                            <br/>
-                            <div className="container  text-white">
-                                DISCHARGE TIME
-                            </div>
-                            <br/>
-                            <ul className="io">
-                                <li>
-                                    Mon - Fri01:00pm - 02:00pm
-                                </li>
-                                <li>
-                                    Saturday11:00am - 01:00pm
-                                </li>
-                            </ul>
+                        <div className="ld container  col-md-3">
+                            <div className="list">
+                                <div className="container   text-white">
+                                    OUR WORKING TIME
+                                </div>
+                                <br/>
+                                <ul className="io">
+                                    <li>
+                                        Mon - Fri08:00am - 10:00pm
+                                    </li>
+                                    <li>
+                                        Syaturda10:00am - 07:00pm
+                                    </li>
+                                    <li>
+                                        SundayEmergency Only
+                                    </li>
+                                    <li>
+                                        Ambulance24/7 Service
+                                    </li>
+                                    <li>
+                                        Visitors11:00am - 01:00pm
+                                    </li>
+                                </ul>
+                                <br/>
+                                <div className="container  text-white">
+                                    DISCHARGE TIME
+                                </div>
+                                <br/>
+                                <ul className="io">
+                                    <li>
+                                        Mon - Fri01:00pm - 02:00pm
+                                    </li>
+                                    <li>
+                                        Saturday11:00am - 01:00pm
+                                    </li>
+                                </ul>
 
+                            </div>
                         </div>
+                    </div>
+
+                </div>
+
+                <div className="bg-blue ">
+                    <div className="container font-weight-bolder">
+
+
+                        <div className="a">
+                            Years Of Experience
+                            <h1 className="text-center h1 font-weight-bold">
+                                <CountUp end={125}/>+
+                            </h1>
+                        </div>
+                        <div className="b">
+                            Number Of Doctors
+                            <h1 className="text-center h1 font-weight-bold">
+                                <CountUp end={1180}/>+
+                            </h1>
+                        </div>
+                        <div className="f">
+                            Precious Awards
+                            <h1 className="text-center h1 font-weight-bold">
+                                <CountUp end={650}/>+
+                            </h1>
+                        </div>
+                        <div className="s">
+                            Our Happy Clients
+                            <h1 className="text-center h1 font-weight-bold">
+                                <CountUp end={1420}/>+
+                            </h1>
+                        </div>
+
                     </div>
                 </div>
 
-                    <Parallax className="parallax"  bgImage="/image/slider/car.jpg" bgImageAlt="the cat" strength={800}>
-                        Content goes here. Parallax height grows with content height.
-                    </Parallax>
 
+                <div className="hr">
+
+                </div>
+
+                <Parallax className="parallax" bgImage="/image/slider/def.jpg  " bgImageAlt="the cat" strength={800}>
+                    
+                </Parallax>
 
             </div>
         );
