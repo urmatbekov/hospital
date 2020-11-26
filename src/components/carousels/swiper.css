@@ -13,7 +13,9 @@
     overflow: hidden;
     position: absolute;
 }
-
+.swiper-slide img {
+    height: 100%;
+}
 .swiper-slide .th-sliderContent {
     width: 820px;
     float: left;
@@ -30,7 +32,7 @@
     z-index: -1;
     right: 67px;
     width: 9999px;
-    height: 100%;
+    height: 120%;
     position: absolute;
     transform: skewX(-15deg);
     background: #00ADEF;

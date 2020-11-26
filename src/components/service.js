@@ -23,6 +23,9 @@ class Service {
         return await this.request('/auth/users/', data,"POST")
     }
 
+    createLogin = async (data) => {
+        return await  this.request("/auth/token/login", data, "POST")
+    }
 }
 
 export default Service

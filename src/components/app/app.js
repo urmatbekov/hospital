@@ -3,6 +3,7 @@ import Header from "../header/header";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Index from "../page";
 import Register from "../auth/register/register";
+import Login from "../auth/login/login";
 
 
 class App extends Component {
@@ -16,6 +17,9 @@ class App extends Component {
                     </Route>
                     <Route exact path="/register">
                         <Register/>
+                    </Route>
+                    <Route exact path="/login">
+                        <Login/>
                     </Route>
                 </Switch>
             </Router>

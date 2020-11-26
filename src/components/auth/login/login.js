@@ -3,15 +3,11 @@ import Service from "../../service";
 
 const initialState = {
     username: "",
-    password: "",
-    password2: "",
-    email: ""
+    password: ""
 }
 
-class Register extends Component {
-
+class Login extends Component {
     service = new Service()
-
     state = initialState
 
     onChange = (e) => {
@@ -20,15 +16,9 @@ class Register extends Component {
             [elem.name]: elem.value
         })
     }
-
     onSubmit = (e) => {
         e.preventDefault()
-        const state = this.state
-        if (state.password !== state.password2) {
-            this.setState({error: "Password not same"})
-            return;
-        }
-        this.service.createUser(this.state).then((data) => {
+        this.service.createLogin(this.state).then((data) => {
                 console.log(data)
                 this.setState(initialState)
             }
@@ -46,36 +36,23 @@ class Register extends Component {
         return (
             <div className="col-md-4 offset-md-4 mt-4">
                 {this.state.error && <p>{this.state.error}</p>}
+
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label htmlFor="UserName">Username</label>
+                        <label htmlFor="UserName">Login</label>
                         <input onChange={this.onChange} className="form-control" name="username" type="text"
-                               id="UserName"
-                               value={this.state.username}/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="Email">Email</label>
-                        <input onChange={this.onChange} className="form-control" name="email" type="email"
-                               id="Email"
-                               value={this.state.email}/>
+                               id="UserName"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="Password">Password</label>
                         <input onChange={this.onChange} className="form-control" name="password" type="password"
-                               id="Password"
-                               value={this.state.password}/>
+                               id="Password"/>
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="Password2">Password2</label>
-                        <input onChange={this.onChange} className="form-control" name="password2" type="password"
-                               id="Password2"
-                               value={this.state.password2}/>
-                    </div>
-                    <button type="submit" className="btn btn-primary">Register</button>
+                    <button type="submit" className="btn btn-primary">Войти</button>
                 </form>
             </div>
         );
     }
 }
 
-export default Register;
+export default Login;
