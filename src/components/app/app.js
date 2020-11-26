@@ -1,23 +1,24 @@
 import React, {Component} from 'react';
-import Best from "../best/best";
 import Header from "../header/header";
-import ParallaxSection from "../parallax/parallax";
-import Section from "../section/section";
-import Carousels from "../carousels/carousels";
-
-
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Index from "../page";
+import Register from "../auth/register/register";
 
 
 class App extends Component {
     render() {
         return (
-            <div>
+            <Router>
                 <Header/>
-                <Carousels/>
-                <Best/>
-                <ParallaxSection/>
-                <Section/>
-            </div>
+                <Switch>
+                    <Route exact path="/">
+                        <Index/>
+                    </Route>
+                    <Route exact path="/register">
+                        <Register/>
+                    </Route>
+                </Switch>
+            </Router>
         );
     }
 }
