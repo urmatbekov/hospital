@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Service from "../../service";
+import Cookie from "js-cookie"
 
 const initialState = {
     username: "",
@@ -19,8 +20,9 @@ class Login extends Component {
     onSubmit = (e) => {
         e.preventDefault()
         this.service.createLogin(this.state).then((data) => {
-                console.log(data)
+                Cookie.set('token', data["auth_token"]);
                 this.setState(initialState)
+                this.props.login()
             }
         ).catch(async ({res}) => {
             // ошибканы кармоо
@@ -41,12 +43,12 @@ class Login extends Component {
                     <div className="form-group">
                         <label htmlFor="UserName">Login</label>
                         <input onChange={this.onChange} className="form-control" name="username" type="text"
-                               id="UserName"/>
+                               id="UserName" value={this.state.username}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="Password">Password</label>
                         <input onChange={this.onChange} className="form-control" name="password" type="password"
-                               id="Password"/>
+                               id="Password" value={this.state.password}/>
                     </div>
                     <button type="submit" className="btn btn-primary">Войти</button>
                 </form>

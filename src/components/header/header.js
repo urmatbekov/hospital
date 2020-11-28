@@ -1,9 +1,13 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {Navbar, Nav, Button, Form} from "react-bootstrap";
 import "./header.css";
 import {Link} from "react-router-dom";
+import Service from "../service";
+import Cookie from "js-cookie"
 
 class Header extends Component {
+    service = new Service()
+
     render() {
         return (
             <Navbar bg="dark" variant="dark" expand="lg">
@@ -107,12 +111,30 @@ class Header extends Component {
                     </Navbar.Collapse>
                 </div>
                 <Form inline>
-                    <Link to={'/register'}>
-                        <Button variant="outline-primary">Регистрация</Button>
-                    </Link>
-                    <Link to={'/login'}>
-                        <Button variant="outline-primary">Войти</Button>
-                    </Link>
+                    {this.props.user.username ?
+                        <Fragment><p style={{color:"white",paddingRight:"10px"}}>{this.props.user.username}</p>
+                            <Link to={'/login'}>
+                                <Button onClick={() => {
+                                    this.service.deleteLogin().then(() => {
+                                        Cookie.remove("token")
+                                        this.props.logout()
+                                    })
+                                }} variant="outline-primary">Выход</Button>
+                            </Link>
+                        </Fragment>
+                        :
+                        <Fragment>
+                            <Link to={'/register'}>
+                                <Button variant="outline-primary">Регистрация</Button>
+                            </Link>
+                            <Link to={'/login'}>
+                                <Button variant="outline-primary">Войти</Button>
+                            </Link>
+                        </Fragment>
+
+                    }
+
+
                 </Form>
             </Navbar>
         );

@@ -4,13 +4,34 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Index from "../page";
 import Register from "../auth/register/register";
 import Login from "../auth/login/login";
+import Service from "../service";
 
 
 class App extends Component {
+    service = new Service()
+    state = {
+        user: {}
+    }
+
+    componentDidMount() {
+        this.login()
+    }
+
+    login = () => {
+        this.service.getUser().then((data) => {
+            this.setState({user: data})
+        })
+    }
+
+    logout = () => {
+        this.setState({user: {}})
+    }
+
+
     render() {
         return (
             <Router>
-                <Header/>
+                <Header user={this.state.user} logout={this.logout}/>
                 <Switch>
                     <Route exact path="/">
                         <Index/>
@@ -18,7 +39,10 @@ class App extends Component {
                     <Route exact path="/register">
                         <Register/>
                     </Route>
-                        <Login/>
+                    <Route exact path="/login">
+                        <Login login={this.login}/>
+                    </Route>
+
                 </Switch>
             </Router>
         );
