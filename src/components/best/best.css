@@ -8,12 +8,22 @@
     text-align: center;
     word-break: break-all;
 }
+<<<<<<< HEAD
 
 .ml-2 {
     color: black;
 }
 
 .span {
+=======
+.ml{
+    color: black;
+}
+.relative{
+    position: relative;
+}
+.span{
+>>>>>>> bf2000272cb0fe5127d792586b11bfe796b5f99f
     color: #00ADEF;
 }
 
@@ -27,19 +37,28 @@ svg {
     padding: 46px 0;
     min-height: 556px;
     margin: 30px 0 -120px;
+<<<<<<< HEAD
     background-size: 7000px 600px;
     background: #344659 url(https://www.desktopbackground.org/download/1680x1050/2012/05/05/385388_microsoft-windows-7-ball-wallpapers-and-images-wallpapers_1920x1200_h.jpg) no-repeat center;
+=======
+    background: #344659 url(https://www.desktopbackground.org/download/1680x1050/2012/05/05/385388_microsoft-windows-7-ball-wallpapers-and-images-wallpapers_1920x1200_h.jpg)  no-repeat 50% 100%;
+    background-size: 7000px 600px;
+    background-position: center;
+
+>>>>>>> bf2000272cb0fe5127d792586b11bfe796b5f99f
 }
 
 .ld {
     width: 400px;
     float: right;
-    margin-right: 252px;
-    position: relative;
-    top: -321px;
+    margin-bottom: 14%;
 }
 
+<<<<<<< HEAD
 li {
+=======
+.io{
+>>>>>>> bf2000272cb0fe5127d792586b11bfe796b5f99f
     color: aliceblue;
     list-style: none;
     margin-left: 31px;
@@ -54,3 +73,42 @@ h2 {
     background-color: #00ADEF;
     font-size: 25px;
 }
+.bg-blue{
+    background-color: #00adef;
+    width: 100%;
+    height: 275px;
+    position: relative;
+
+}.a, .b, .f, .s {
+     border:1px solid white;
+     width: 200px;
+     height: 150px;
+     position: absolute;
+    top: 18%;
+    color: aliceblue;
+    font-size: 27px;
+    text-align: center;
+ }
+ .a{
+     left: 20%;
+ }
+ .b{
+     left: 35%;
+ }
+ .s{
+     left: 50%;
+ }
+ .f{
+     left: 65%;
+ }
+.bg-blue .h1{
+    color: #2d3e50;
+}
+.parallax{
+    width: 100%;
+    height: 100vh;
+}
+.hr{
+    margin-bottom: 50%;
+}
+
