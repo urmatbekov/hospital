@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Service from "../../service";
 
 const initialState = {
-    email: "",
+    UserName: "",
     password: "",
 }
 
@@ -44,15 +44,15 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
+
                 <div className="col-md-4 offset-md-4 mt-4">
                     {this.state.error && <p>{this.state.error}</p>}
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
-                            <label htmlFor="Email">Логин</label>
-                            <input onChange={this.onChange} className="form-control" name="email" type="email"
-                                   id="Email"
-                                   value={this.state.email}/>
+                            <label htmlFor="UserName">Username</label>
+                            <input onChange={this.onChange} className="form-control" name="username" type="text"
+                                   id="UserName"
+                                   value={this.state.username}/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="Password">Пароль</label>
@@ -63,7 +63,6 @@ class Login extends Component {
                         <button type="submit" className="btn btn-primary">Войти</button>
                     </form>
                 </div>
-            </div>
         );
     }
 }
