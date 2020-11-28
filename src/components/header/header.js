@@ -1,9 +1,9 @@
 import React, {Component, Fragment} from 'react';
 import {Navbar, Nav, Button, Form} from "react-bootstrap";
 import "./header.css";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import Service from "../service";
-import Cookie from "js-cookie"
+
 
 class Header extends Component {
     service = new Service()
@@ -16,9 +16,9 @@ class Header extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="my-navbar">
                             <Nav.Item>
-                                <Nav.Link href="#link">
+                                <NavLink className={"nav-link"} to={"/"}>
                                     <span className='home'>HOME</span>
-                                </Nav.Link>
+                                </NavLink>
                                 <ul className='my-ul col'>
                                     <li>
                                         <a href="">HOME ON</a>
@@ -112,15 +112,14 @@ class Header extends Component {
                 </div>
                 <Form inline>
                     {this.props.user.username ?
-                        <Fragment><p style={{color:"white",paddingRight:"10px"}}>{this.props.user.username}</p>
-                            <Link to={'/login'}>
-                                <Button onClick={() => {
-                                    this.service.deleteLogin().then(() => {
-                                        Cookie.remove("token")
-                                        this.props.logout()
-                                    })
-                                }} variant="outline-primary">Выход</Button>
-                            </Link>
+                        <Fragment><p style={{color: "white", paddingRight: "10px"}}>{this.props.user.username}</p>
+
+                            <Button onClick={() => {
+                                this.service.deleteLogin().then(() => {
+                                    this.props.logout()
+                                })
+                            }} variant="outline-primary">Выход</Button>
+
                         </Fragment>
                         :
                         <Fragment>

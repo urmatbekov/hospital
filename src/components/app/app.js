@@ -5,6 +5,7 @@ import Index from "../page";
 import Register from "../auth/register/register";
 import Login from "../auth/login/login";
 import Service from "../service";
+import Cookie from "js-cookie";
 
 
 class App extends Component {
@@ -20,10 +21,13 @@ class App extends Component {
     login = () => {
         this.service.getUser().then((data) => {
             this.setState({user: data})
+        }).catch(() => {
+            this.logout()
         })
     }
 
     logout = () => {
+        Cookie.remove("token")
         this.setState({user: {}})
     }
 

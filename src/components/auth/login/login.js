@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Service from "../../service";
 import Cookie from "js-cookie"
+import {withRouter} from "react-router-dom";
 
 const initialState = {
     username: "",
@@ -23,6 +24,7 @@ class Login extends Component {
                 Cookie.set('token', data["auth_token"]);
                 this.setState(initialState)
                 this.props.login()
+            this.props.history.push("/")
             }
         ).catch(async ({res}) => {
             // ошибканы кармоо
@@ -57,4 +59,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default withRouter(Login);
