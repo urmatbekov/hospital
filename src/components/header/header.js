@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Navbar, Nav} from "react-bootstrap";
+import {Navbar, Nav, Button, Form} from "react-bootstrap";
 import "./header.css";
+import {Link} from "react-router-dom";
 
 class Header extends Component {
     render() {
@@ -105,6 +106,14 @@ class Header extends Component {
                         </Nav>
                     </Navbar.Collapse>
                 </div>
+                <Form inline>
+                    <Link to={'/register'}>
+                        <Button variant="outline-primary">Регистрация</Button>
+                    </Link>
+                    <Link to={'/login'}>
+                        <Button variant="outline-primary">Войти</Button>
+                    </Link>
+                </Form>
             </Navbar>
         );
     }
